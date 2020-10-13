@@ -1,0 +1,26 @@
+<div class="modal fade" id="crud-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="crud-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form role="form" id="crud-form" name="curd-form" class="form-horizontal" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="crud-id">
+                    {{$slot}}
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                    <div>
+                        <button type="submit" class="btn btn-primary" id="btn-save"></button>
+                    </div>
+                </div>                    
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
